@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0; /* Changed from 5 to 0 for cleaner layout */
-    background-color: #b8b8b8;
+    background-color: #ffffff;
 }
 
 .header {
@@ -216,9 +216,9 @@ button:hover {
 
 .post {
     background-color: #f7f7f7;
-    padding: 15px; /* Increased padding for a cleaner look */
+    padding: 20px; /* Increased padding for a cleaner look */
     border-radius: 5px;
-    margin-bottom: 15px; /* Increased margin for better separation */
+    margin-bottom: 10px; /* Increased margin for better separation */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: left; /* Align text to the left for better readability */
     line-height: 1.5; /* Improved line height for readability */
@@ -229,7 +229,7 @@ footer {
     bottom: 0px;
     right: 0px;
     text-align: center;
-    color: rgb(247, 247, 247);
+    color: rgb(3, 0, 185);
     width: 100%;
     font-weight: 200;
     font-size: 0.8rem;

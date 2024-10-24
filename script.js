@@ -102,7 +102,7 @@ Connect with other members and discover the opportunities available to you.</h5>
     
        <div class="contact-card">
         <img src="https://scontent.fmnl33-5.fna.fbcdn.net/v/t39.30808-6/462767338_1673482213233997_2288140893929872599_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGonPIZUFQHmQixLUXjX-VNXtqWeFn1PFBe2pZ4WfU8UBXZ0xzriDEWCu4oBRnuTHgUYg1phm_gKJ0CbOwJ_Yje&_nc_ohc=gk-J7IVKaV8Q7kNvgHBywHN&_nc_zt=23&_nc_ht=scontent.fmnl33-5.fna&_nc_gid=AzOX0q2ksNVklGN2n_umt51&oh=00_AYDqNeG7lzLgl5BTEHk5RqB8wEuKFS30jgi-Etild354LA&oe=67204989" alt="Profile Image 5" class="contact-image">
-        <h3 class="contact-name"Randolph Aj Ugaddan </h3>
+        <h3 class="contact-name">Randolph Aj Ugaddan </h3>
         <p class="contact-profession">CBAPA REPRESENTATIVE</p>
         <div class="social-buttons">
             <a href="https://www.facebook.com/randolphajballesteros.ugaddan" target="_blank" class="social-button">Facebook</a>

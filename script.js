@@ -21,7 +21,7 @@ function showFriendDetails(friendName) {
                 <h3>&nbsp; </h3>
             <h3>Step 4: Celebrate your success with us!</h3>
                <h3>&nbsp; </h3>
-            <h4>     Important: You must claim your prize within [X days] of finding the treasure. Prizes unclaimed after this period will be forfeited.  </h4>
+            <h41>     Important: You must claim your prize within [X days] of finding the treasure. Prizes unclaimed after this period will be forfeited.  </h41>
         `;
     } else if (friendName === 'Friend 2') {
         content = `
@@ -44,7 +44,8 @@ Connect with other members and discover the opportunities available to you.</h5>
     } else if (friendName === 'Friend 3') {
         content = `
       <h2>Contact Us!</h2>
-<h3>Please don't hesitate to contact us if you have any queries!</h3>
+<h3>Please don't hesitate to contact us </h3>
+<h3>if you have any queries!</h3>
 <div class="contact-list">
     <div class="contact-card">
         <img src="https://bit.ly/4dXEODN" alt="Profile Image 1" class="contact-image">

@@ -1,0 +1,272 @@
+/* Base Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0; /* Cleaner layout */
+    background-color: #ffffff;
+}
+
+/* Header Styling */
+.header {
+    background: linear-gradient(to right, #ff5e5e, #e23c64, #b0183d);
+    color: #ffffff;
+    height: 60px; /* Better height for aesthetics */
+    display: flex;
+    align-items: center; /* Vertical alignment */
+    justify-content: space-between; /* Space between title and logo */
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Always on top */
+}
+
+.header h1 {
+    font-size: 18px;
+    margin: 0;
+    margin-top: 10px;
+    text-align: right;
+    text-decoration: underline;
+}
+
+.header .logo {
+    width: 55px;
+    height: auto;
+    border-radius: 0px;
+    padding: 1px;
+}
+
+/* Content Styling */
+h31 {
+    line-height: .5;
+    font-size: .5px;
+    text-align: center;
+    margin: 5px 0;
+    font-style: italic;
+    color: #ffffff;
+}
+
+h21 {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+h13, h2, h3, h5, h4, h6 {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-style: italic;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 12px;
+}
+
+h5 {
+    font-size: 15px;
+}
+
+h41 {
+    font-size: 7px;
+    color: #0011a7;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+.main-content {
+    display: flex;
+    margin: 80px 20px 20px; /* Avoid overlap with header */
+}
+
+/* Sidebar Styling */
+.sidebar {
+    flex: 0.3; /* Reduced width of the sidebar */
+    padding: 0px;
+    background: linear-gradient(to right, #ff5e5e, #e23c64, #b0183d);
+    margin-right: 0px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+    display: default;
+    flex-direction: row; /* Set flex direction to row for horizontal alignment */
+    justify-content: space-around; /* Space out the buttons evenly */
+    align-items: start; /* Align buttons vertically in the center */
+    min-height: 10px; /* Ensure a small height */
+}
+
+/* Sidebar title styling */
+.sidebar h2 {
+    display: none; /* Hide title to make more space for buttons */
+}
+
+/* Adjust button styles */
+.sidebar button {
+    background-color: #ffffff; /* Set button background */
+    color: #0b00a0; /* Button text color */
+    border: 1px solid #e23c64; /* Add border for contrast */
+    padding: 5px 5px; /* Reduced padding for smaller buttons */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px; /* Reduced font size to fit better */
+    margin: 0 0px; /* Small margin between buttons */
+}
+
+/* Change button appearance on hover */
+.sidebar button:hover {
+    background-color: #09005c;
+    color: white; /* Invert colors on hover */
+}
+
+
+/* Feed Styling */
+.feed {
+    flex: 3;
+    padding: 20px;
+    background: linear-gradient(to right, #ff5e5e, #e23c64, #b0183d);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 18px;
+    overflow-y: auto; /* Scroll if content overflows */
+}
+
+/* Button Styling */
+button {
+    padding: 5px 7px;
+    background-color: #4267B2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #013492;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    color: #0300b9;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+/* Mobile-specific Styling */
+@media (max-width: 768px) {
+    .main-content, .sidebar, .feed {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sidebar, .feed {
+        margin: 10px 0;
+
+    }
+
+    .sidebar h2, .feed h31 {
+        font-size: 30px;
+    }
+
+    .feed {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+/* Contact List Styling */
+.contact-list {
+    display: flex;               /* Use flexbox for layout */
+    flex-wrap: wrap;            /* Allow cards to wrap to the next line */
+    justify-content: center;     /* Center cards for a cleaner look */
+    margin: 10px 0;             /* Reduced margin for spacing */
+}
+
+/* Contact Card Styling */
+.contact-card {
+    background: white;          /* Card background color */
+    border-radius: 6px;        /* Slightly smaller rounded corners */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* Smaller shadow for depth */
+    margin: 3px;               /* Margin between cards */
+    padding: .2px;
+    width: 10px;              /* Further reduced width for mobile */
+    text-align: center;        /* Center text within card */
+    transition: transform 0.2s; /* Animation effect on hover */
+}
+
+/* Contact Image Styling */
+.contact-image {
+    margin-top: 25px;
+    align-content:  center;
+    width: 70px;               /* Adjusted width for images */
+    height: 70px;              /* Adjusted height for images */
+    border-radius: 50%;        /* Circular image */
+    object-fit: cover;         /* Maintain aspect ratio */
+    margin-bottom: 5px;        /* Space below the image */
+}
+
+/* Contact Name Styling */
+.contact-name {
+    font-size: 20px;           /* Smaller font size for names */
+    font-weight: bold;         /* Bold font weight */
+    color: #333;               /* Dark color for text */
+    margin: 3px 0;            /* Margin above and below */
+}
+
+/* Contact Profession Styling */
+.contact-profession {
+    font-size: 15px;           /* Smaller font size for profession */
+    color: #777;               /* Gray color for text */
+    margin: 3px 0;            /* Margin above and below */
+}
+
+/* Social Buttons Container Styling */
+.social-buttons {
+    display: flex;             /* Use flexbox for buttons */
+    justify-content: center;   /* Center buttons */
+}
+
+/* Social Button Styling */
+.social-button {
+    background-color: #4267B2; /* Facebook color */
+    color: white;              /* White text */
+    border: none;              /* No border */
+    border-radius: 4px;       /* Rounded corners */
+    padding: 3px 6px;         /* Reduced padding for button */
+    text-decoration: none;     /* Remove underline */
+    font-size: 15px;           /* Smaller font size */
+    margin: 2px;              /* Margin around buttons */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+/* Button Hover Effect */
+.social-button:hover {
+    background-color: #365899; /* Darker shade on hover */
+}
+
+/* Mobile-Specific Media Queries */
+@media (max-width: 480px) {
+    .contact-list {
+        flex-direction: column; /* Stack cards vertically on very small screens */
+        align-items: center;    /* Center cards */
+    }
+
+    .contact-card {
+        width: 90%;             /* Full width for cards on mobile */
+        max-width: 250px;       /* Maximum width for larger screens */
+    }
+}
+

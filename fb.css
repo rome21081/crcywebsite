@@ -89,13 +89,11 @@ h3 {
         1px 1px 0 rgba(255, 255, 255, 1);     /* Bottom right */
     font-style: italic; /* Make text italic */
 }
-
-
-h4{
-    color: #9b0000;
+h41{
+    color: #0e008b;
     text-shadow: 
         -1px -1px 0 rgba(255, 255, 255, 0.7),  /* Top left */
-        1px -1px 0 rgba(255, 253, 253, 0.7),   /* Top right */
+        1px -1px 0 rgba(255, 255, 255, 0.7),   /* Top right */
         -1px 1px 0 rgba(255, 255, 255, 0.7),    /* Bottom left */
         1px 1px 0 rgba(255, 255, 255, 0.7);     /* Bottom right */
     margin-bottom: 10px;
@@ -316,7 +314,3 @@ footer li {
     transition: background-color 0.3s; /* Smooth transition for hover */
     background-color: #013492;
 }
-
-
-
-

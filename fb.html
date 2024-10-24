@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>College Red Cross Youth Council</title>
     <link rel="stylesheet" href="fb.css">
+    <link rel="stylesheet" href="mobile.css">
+
+    <style>
+        /* Hide entire content by default */
+        .mobile-container {
+            display: none;
+        }
+
+        /* Display the content only on small screens (phones) */
+        @media (max-width: 768px) {
+            .mobile-container {
+                display: block; /* Show content on mobile */
+            }
+        }
+    </style>
+
 </head>
 <body>
     <div class="container">
@@ -17,11 +33,7 @@
                 <h2>CRCY<img src="sample 2.png" alt="CRCY Logo" class="logo2"> </h2>
                 <ul>
                     <button onclick="showFriendDetails('Steps on Claiming your Prize')">How To Claim Your Prize!</button>
-                    <h1> </h1>
-                    <h1> </h1>
-                   <button onclick="showFriendDetails('Friend 2')">Events</button>
-                    <h1> </h1>
-                    <h1> </h1>
+                    <button onclick="showFriendDetails('Friend 2')">Events</button>
                    <button onclick="showFriendDetails('Friend 3')">Contact</button>
                 </ul>
             </div>
@@ -46,16 +58,17 @@
                 </div>
             </div>
         </div>
-
         <!-- Footer Section -->
         <footer>
             <div class="social-media">
                 <a href="https://www.facebook.com/profile.php?id=61551888700101">Facebook</a> | 
                 <a href="mailto:collegeredcrossyouthisuechague@gmail.com">Email</a> | 
-                <a href="https://www.facebook.com/messages/t/135503089647716">Messenger</a>
+                <a href="">Messenger</a>
             </div>
             <p>&copy; All rights reserved. College Red Cross Youth Council ISU Echague.</p>
         </footer>
+        </div>
+    
 
     <script src="script.js"></script>
 </body>

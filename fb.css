@@ -125,19 +125,22 @@ h6{
     display: flex;
     margin: 80px 20px 20px; /* Add margin-top to avoid overlap with fixed header */
 }
-
+/* Sidebar Styling */
 .sidebar {
     flex: 0.5; /* Adjusted to reduce the width of the sidebar */
     padding: 20px;
-    background: linear-gradient(to right, #ff5e5e, #e23c64,#b0183d);
+    background: linear-gradient(to right, #ff5e5e, #e23c64, #b0183d);
     margin-right: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex; /* Allow height stretching */
     flex-direction: column; /* Ensures children stack vertically */
+    align-items: flex-start; /* Align items to the start for left alignment */
+    justify-content: flex-start; /* Align items at the top */
     min-height: 700px; /* Set a minimum height for the sidebar */
 }
 
+/* Sidebar Header Styling */
 .sidebar h2 {
     display: flex; /* Use flexbox for alignment */
     align-items: center; /* Center items vertically */
@@ -147,12 +150,41 @@ h6{
     margin-bottom: 20px; /* Space below the title */
 }
 
+/* Sidebar Logo Styling */
 .sidebar .logo2 {
     width: 50px; /* Set logo width */
     height: auto; /* Set a fixed height for the logo for better alignment */
     margin-left: 20px; /* Space between the text and the logo */
     object-fit: contain; /* Maintain aspect ratio */
 }
+
+/* Button Styling */
+.sidebar ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    width: 100%; /* Make buttons take full width */
+}
+
+.sidebar button {
+    background-color: #fff; /* Background color for buttons */
+    color: #333; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for buttons */
+    margin: 10px 0; /* Space between buttons */
+    font-size: 16px; /* Font size for button text */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Transition effect */
+    width: 100%; /* Full width for button */
+}
+
+/* Button Hover Effect */
+.sidebar button:hover {
+    background-color: #15008b; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
 
 
 .feed {

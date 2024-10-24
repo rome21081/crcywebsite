@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>College Red Cross Youth Council</title>
-    <link rel="stylesheet" href="fb.css">
-    <link rel="stylesheet" href="mobile.css">
+
+    <!-- Load CSS files based on media queries -->
+    <link rel="stylesheet" href="fb.css" media="(min-width: 769px)"> <!-- For PC and larger screens -->
+    <link rel="stylesheet" href="mobile.css" media="(max-width: 768px)"> <!-- For mobile phones -->
 
     <style>
         /* Hide entire content by default */
@@ -20,7 +22,6 @@
             }
         }
     </style>
-
 </head>
 <body>
     <div class="container">
@@ -34,26 +35,26 @@
                 <ul>
                     <button onclick="showFriendDetails('Steps on Claiming your Prize')">How To Claim Your Prize!</button>
                     <button onclick="showFriendDetails('Friend 2')">Events</button>
-                   <button onclick="showFriendDetails('Friend 3')">Contact</button>
+                    <button onclick="showFriendDetails('Friend 3')">Contact</button>
                 </ul>
             </div>
             <div class="feed">
                 <div class="friend-details" id="friendDetails">
-                    <h21> Congratulations, Treasure Hunter! 🏆🎉</h21>        
+                    <h2> Congratulations, Treasure Hunter! 🏆🎉</h2>        
                     <h3> &nbsp; </h3>
-                    <h31>
+                    <h3>
                     You’ve successfully found the hidden treasure in our Red Cross Youth Month hunt!
-                    </h31>
-                    <h31>
+                    </h3>
+                    <h3>
                         Your sharp eyes and perseverance have paid off. Now, it’s time to celebrate this
-                    </h31>
-                    <h31>
+                    </h3>
+                    <h3>
                         victory and claim your well-deserved reward!
-                    </h31>
-                    <h31>
+                    </h3>
+                    <h3>
                         Thank you for being part of this exciting journey. Keep that adventurous spirit alive 
-                    </h31>
-                    <h31> as we continue to spread the Red Cross mission together! </h31>
+                    </h3>
+                    <h3> as we continue to spread the Red Cross mission together! </h3>
                     <p id="friendInfo"></p>
                 </div>
             </div>
@@ -67,9 +68,8 @@
             </div>
             <p>&copy; All rights reserved. College Red Cross Youth Council ISU Echague.</p>
         </footer>
-        </div>
+    </div>
     
-
     <script src="script.js"></script>
 </body>
 </html>

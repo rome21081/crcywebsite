@@ -1,0 +1,322 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0; /* Changed from 5 to 0 for cleaner layout */
+    background-color: #b8b8b8;
+}
+
+.header {
+    background: linear-gradient(to right, #ff5e5e, #e23c64,#b0183d);
+    color: rgb(255, 255, 255);
+    height: 60px; /* Increased height for better aesthetics */
+    display: flex; /* Use flexbox for better alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between title and logo */
+    padding: 0 20px; /* Add padding to the sides */
+    position: fixed; /* Fix header at the top */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    z-index: 1000; /* Ensure header is above other content */
+}
+
+.header h1 {
+    font-size: 24px; /* Adjust title font size */
+    margin: 0; /* Remove default margins */
+    text-align: right;
+    text-decoration: underline;
+
+}
+
+.header .logo {
+    width: 55px; /* Set logo width */
+    height: auto; /* Automatically adjust height based on the image aspect ratio */
+    border-radius: 0px; /* Optional: Rounded corners for the outline */
+    padding: 1px; /* Optional: Padding for better appearance */
+}
+h31 {
+    line-height: 1.5; /* Adjust line height for better spacing */
+    font-size: 40px;
+    text-align: center; /* Keep text centered */
+    margin: 20px 0; /* Optional: Add vertical margin for spacing around the heading */
+    font-style: italic;
+    color: #ffffff;
+}
+h21{
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+    font-size: 50px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-weight: bold; /* Make the text bold */
+}
+h13
+{
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+    font-size: 25px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-weight: bold; /* Make the text bold */
+    font-style: italic; /* Make the text italic */
+}
+h2 {
+    color: #ffffff;
+    margin-bottom: 50px;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+   
+}
+
+h3 {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    line-height: .3; 
+    font-size: 35px;
+    text-align: start;
+}
+
+.blue-outline {
+    color: blue; /* Change text color to blue */
+    text-shadow: 
+        -1px -1px 0 rgba(255, 255, 255, 1),  /* Top left */
+        1px -1px 0 rgba(255, 255, 255, 1),   /* Top right */
+        -1px 1px 0 rgba(255, 255, 255, 1),    /* Bottom left */
+        1px 1px 0 rgba(255, 255, 255, 1);     /* Bottom right */
+    font-style: italic; /* Make text italic */
+}
+
+
+h4{
+    color: #9b0000;
+    text-shadow: 
+        -1px -1px 0 rgba(255, 255, 255, 0.7),  /* Top left */
+        1px -1px 0 rgba(255, 253, 253, 0.7),   /* Top right */
+        -1px 1px 0 rgba(255, 255, 255, 0.7),    /* Bottom left */
+        1px 1px 0 rgba(255, 255, 255, 0.7);     /* Bottom right */
+    margin-bottom: 10px;
+    font-size: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-style: italic;
+}
+h5{
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: start;
+    font-size: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    margin-right: 30px;
+}
+h6{
+    margin-top: 0px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+
+
+
+.main-content {
+    display: flex;
+    margin: 80px 20px 20px; /* Add margin-top to avoid overlap with fixed header */
+}
+
+.sidebar {
+    flex: 0.5; /* Adjusted to reduce the width of the sidebar */
+    padding: 20px;
+    background: linear-gradient(to right, #ff5e5e, #e23c64,#b0183d);
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Allow height stretching */
+    flex-direction: column; /* Ensures children stack vertically */
+    min-height: 700px; /* Set a minimum height for the sidebar */
+}
+
+.sidebar h2 {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    font-size: 50px; /* Ensure the font size matches your design */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #ffffff; /* Match the color to your design */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.sidebar .logo2 {
+    width: 50px; /* Set logo width */
+    height: auto; /* Set a fixed height for the logo for better alignment */
+    margin-left: 20px; /* Space between the text and the logo */
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+
+.feed {
+    flex: 3; /* Keep the feed wider */
+    padding: 20px; /* Adjusted padding */
+    background: linear-gradient(to right, #ff5e5e, #e23c64,#b0183d);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-size-adjust: inherit;
+    font-size: 18px;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+.friend-details h2 {
+    margin: 0 0 10px; /* Margin adjustment */
+}
+
+.friend-details p {
+    margin: 5px 0;
+    margin-top: 5px;
+    line-height: 1.6; /* Better readability */
+}
+
+.post-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 80px; /* Increased height for better usability */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Improved font size for readability */
+    resize: none; /* Prevent resizing */
+}
+
+button {
+    align-self: flex-end;
+    padding: 10px 15px;
+    background-color: #4267B2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #013492;
+}
+
+.posts {
+    margin-top: 20px;
+}
+
+.post {
+    background-color: #f7f7f7;
+    padding: 15px; /* Increased padding for a cleaner look */
+    border-radius: 5px;
+    margin-bottom: 15px; /* Increased margin for better separation */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to the left for better readability */
+    line-height: 1.5; /* Improved line height for readability */
+}
+
+footer {
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+    text-align: center;
+    color: rgb(247, 247, 247);
+    width: 100%;
+    font-weight: 200;
+    font-size: 0.8rem;
+    
+}
+
+footer li {
+    padding: 10px;
+}
+
+#typed-text {
+    display: inline-block; /* Ensure it behaves like a block */
+    overflow: hidden; /* Hides the text */
+    white-space: nowrap; /* Prevent text wrapping */
+    border-right: 2px solid; /* Cursor effect */
+    animation: blink 0.7s infinite; /* Blinking effect */
+}
+
+@keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: white; }
+}
+
+.contact-list {
+    display: grid;
+    gap: 0%;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: center; /* Center items */
+    margin: 15px 0; /* Margin for spacing */
+
+}
+
+.contact-card {
+    background-color: white; /* Background color for the card */
+    border-radius: 8px; /* Rounded corners for the card */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 250px; /* Fixed width for cards */
+    height: 200px;
+    margin: 10px; /* Space between cards */
+    padding: 30px; /* Padding inside the card */
+    text-align: center; /* Center text */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+
+}
+
+.contact-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.contact-image {
+    width: 100px; /* Fixed width for image */
+    height: 100px; /* Fixed height for image */
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover; /* Maintain aspect ratio */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+.contact-name {
+    font-size: 1.2rem; /* Font size for name */
+    margin: 10px 0; /* Margin for spacing */
+    text-align: center;
+    color: var(--title-color); /* Use your title color variable */
+}
+
+.contact-profession {
+    font-size: 1rem; /* Font size for profession */
+    color: var(--text-color); /* Use your text color variable */
+}
+
+.social-buttons {
+    display: flex; /* Use flexbox for buttons */
+    justify-content: center; /* Center the buttons */
+    margin-top: 10px; /* Margin above buttons */
+}
+
+.social-button {
+    background-color: var(--first-color); /* Background color for buttons */
+    color: white; /* Text color */
+    padding: 8px 12px; /* Padding for buttons */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* No underline */
+    margin: 0 5px; /* Space between buttons */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+    background-color: #013492;
+}
+
+
+
+

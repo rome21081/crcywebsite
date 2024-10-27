@@ -10,18 +10,22 @@ function showFriendDetails(friendName) {
 
     if (friendName === 'Steps on Claiming your Prize') {
         content = `
-            <h2>Steps on How to Claim Your Prize</h2>
-            <h3>&nbsp; </h3>
-            <h3>&nbsp; </h3>
-            <h3>Step 1: Visit the Red Cross Office.</h3>
-              <h3>&nbsp; </h3>
-            <h3>Step 2: Show your ID and winning certificate.</h3>
-              <h3>&nbsp; </h3>
-            <h3>Step 3: Receive your prize from our representatives.</h3>
-                <h3>&nbsp; </h3>
-            <h3>Step 4: Celebrate your success with us!</h3>
-               <h3>&nbsp; </h3>
-            <h41>     Important: You must claim your prize within [X days] of finding the treasure. Prizes unclaimed after this period will be forfeited.  </h41>
+         <h2>Treasure Hunt Instructions:</h2>
+<h3>Step 1: Treasures are scattered at various locations across the campus.</h3>
+<h3>Step 2: Locate pieces of paper with our logo around campus.</h3>
+<h3>Step 3: Each piece of paper represents a “treasure” worth a prize.</h3>
+<h3>Step 4: Clues or hints will help you find the treasures.</h3>
+<h3>Step 5: Bring any found logo paper to an officer to claim your prize.</h3>
+<h3>Step 6: Ensure the paper's unique code is legible and intact.</h3>
+<h3>Step 7: To claim your prize, scan the QR Code on the paper or message us on our Facebook page, College Red Cross Youth Council ISU-Echague.</h3>
+<h3>Step 8: The hunt runs from October 29 to October 31.</h3>
+<br>
+<h2>How to Claim Your Prize:</h2>
+<h3>Step 1: Bring the verified paper to an officer.</h3>
+<h3>Step 2: Enjoy your reward and celebrate with us!</h3>
+<br>
+<h4>Important: Claim your prize within [X days] of finding the treasure. Unclaimed prizes will be forfeited.</h4>
+
         `;
     } else if (friendName === 'Friend 2') {
         content = `

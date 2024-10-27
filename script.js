@@ -17,7 +17,8 @@ function showFriendDetails(friendName) {
 <h3>Step 4: Clues or hints will help you find the treasures.</h3>
 <h3>Step 5: Bring any found logo paper to an officer to claim your prize.</h3>
 <h3>Step 6: Ensure the paper's unique code is legible and intact.</h3>
-<h3>Step 7: To claim your prize, scan the QR Code on the paper or message us on our Facebook page, College Red Cross Youth Council ISU-Echague.</h3>
+<h3>Step 7: To claim your prize, scan the QR Code on the paper </h3>
+<h3>or message us on our Facebook page, College Red Cross Youth Council ISU-Echague.</h3>
 <h3>Step 8: The hunt runs from October 29 to October 31.</h3>
 <br>
 <h2>How to Claim Your Prize:</h2>

@@ -24,9 +24,7 @@ function showFriendDetails(friendName) {
 <h3>Step 1: Bring the verified paper to an officer.</h3>
 <h3>Step 2: Enjoy your reward and celebrate with us!</h3>
 <br>
-<h4>Important: Claim your prize within [X days] of finding the treasure. Unclaimed prizes will be forfeited.</h4>
-
-        `;
+     `;
     } else if (friendName === 'Friend 2') {
         content = `
 <h2>Upcoming Events!</h2>
